@@ -1,0 +1,185 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main { 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: white;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: white;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Parisienne', cursive;
+    font-size: 60px;
+}
+
+.button {
+    font-size: 25px;
+    padding: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+.buttonBorder {
+    border-bottom: 4px solid white;    /* Bottom border on button focused */
+}
+/* Home page */
+
+.homeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    width: 600px;
+    font-size: 20px;
+}
+
+.homeDiv img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.homeDiv button {
+    background-color: #e47201;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #e47201;
+    width: 100%;
+    padding: 15px;
+}
+
+/* Menu page */
+
+.menuDiv {
+    height: 1000px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+/* Contact page */
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; 
+    height: 500px;
+    width: 600px;
+}
+
+.addressDiv {
+    background-color: rgba(228, 114, 1, 0.2);
+}
+
+.addressDiv p {
+    float: right;
+    font-weight: bold;
+}
+
+.iconsDiv {
+    background-color: rgba(228, 114, 1, 0.2);
+}
+
+.fbButton {
+    background-image: url("images/fbIcon.png");
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.igButton {
+    background-image: url("images/igIcon.png");
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.twButton {
+    background-image: url("images/twIcon.png");
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.iconsDiv button {
+    margin: 20px;
+}
+
+.phoneDiv {
+    background-color: rgba(228, 114, 1, 0.2);
+}
+
+.phoneDiv p {
+   float: right;
+}
+
+.emailDiv{
+    background-color: rgba(228, 114, 1, 0.2);
+    margin-top: 30px;
+}
+.emailDiv p {
+    float: right;
+}
