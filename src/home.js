@@ -75,10 +75,15 @@ function createFooter() {
     const footer = document.createElement('footer');
     content.appendChild(footer);
     footer.classList.add('footer');
+    footer.classList.add('positionFooter');
 }
 
 
 function createHomePage() {
+
+    if(!(document.querySelector('.footer').classList.contains('positionFooter'))) {
+        document.querySelector('.footer').classList.toggle('positionFooter');
+    }
     clearPage();
     createHomeDiv();
 }

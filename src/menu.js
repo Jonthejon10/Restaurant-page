@@ -18,6 +18,7 @@ function clearPage() {
 };
 
 function createMenuPage() {
+    document.querySelector('.footer').classList.toggle('positionFooter')
     let menuDiv = document.createElement('div');
     menuDiv.classList.add('menuDiv');
     main.appendChild(menuDiv);

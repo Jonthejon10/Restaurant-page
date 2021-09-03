@@ -17,6 +17,10 @@ const contactPage = (() => {
     const contactBtn = document.querySelector("#contactBtn");
     contactBtn.addEventListener("click", () => {
         clearPage();
+        
+        if(!(document.querySelector('.footer').classList.contains('positionFooter'))) {
+            document.querySelector('.footer').classList.toggle('positionFooter');
+        }
 
         contactBtn.disabled = true;
 
