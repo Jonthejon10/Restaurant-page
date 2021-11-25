@@ -75,7 +75,17 @@ function createFooter() {
     const footer = document.createElement('footer');
     content.appendChild(footer);
     footer.classList.add('footer');
-    footer.classList.add('positionFooter');
+    let para = document.createElement('p')
+    para.textContent = '© Jonthejon10, 2021'
+    footer.appendChild(para)
+    let git_btn = document.createElement('button')
+
+    git_btn.addEventListener('click', () => {
+	    window.open('https://github.com/Jonthejon10')
+    })
+    
+    git_btn.classList.add('github-button')
+    footer.appendChild(git_btn)
 }
 
 
